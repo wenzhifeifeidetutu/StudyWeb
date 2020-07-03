@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体学习</title>
+
+    <style>
+        /* 为每一个浏览器指定像素 */
+        body {
+            font-size: 16px;
+        }
+        .title {
+            font-size: 20px;
+            /* font-family: Arial, "Microsoft YaHei", "微软雅黑", "黑体"; */
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            /* 字体倾斜 */
+            font-style: italic;
+        }
+
+        .title2 {
+            /* 综合性写法 */
+            /* 不能省略font-size和font-family */
+            font: italic  700 25px   arial;
+        }
+
+        em  {
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <p class="title"> 粉红的回忆</p>
+
+    <p> 默认字体 16px 直接给body</p>
+
+    <em> 斜体不倾斜 </em>
+
+    <p class="title2">综合性写法</p>
+    
+</body>
+</html>
