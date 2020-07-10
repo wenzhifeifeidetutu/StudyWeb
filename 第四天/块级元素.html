@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         /* 块级元素特点
+        比较霸道，独占一行
+        高度，宽度，外边距，内边距都可以控制
+        宽度默认是容器（父级宽度）的100%
+        是一个容器及盒子，里面可以放行内或者块级元素
+        p h1-h6 dt 这种都不要放块级元素 特别是div
+         */
+        div {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 行内元素
+        相邻行内元素在一行上，一行可以显示多个
+        高宽直接设置无效
+        默认宽度就是它本身内容的宽度
+        行内元素只能容纳文本或者其他行内元素
+         */
+
+         span {
+             width: 200px;
+             height: 200px;
+             background-color: pink;
+         }
+       
+    </style>
+</head>
+<body>
+    <div>我是块级元素</div>
+    <div>我是块级元素</div>
+
+    <span>
+        我是行内元素
+    </span>
+    <span>
+        我是行内元素
+    </span>
+    <span>
+        我是行内元素
+    </span>
+    <span>
+        我是行内元素
+    </span>
+    
+</body>
+</html>

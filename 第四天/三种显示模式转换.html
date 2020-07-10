@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 直接将行内元素转换成块级元素，就可以设置杭宽高 */
+        span {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            text-align: center;
+
+        }
+
+        a {
+            display: inline-block;
+            /* display: block; */
+            width: 80px;
+            height: 90px;
+            background-color: black;
+            text-decoration: none;
+            
+        }
+
+        a:link {
+            color: hotpink;
+            
+        }
+        a:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+
+    <span>行内</span>
+    <span>行内</span>
+
+    <div>块级元素</div>
+    <div>块级元素</div>
+
+    <a href="#">百度</a>
+    <a href="#">百度</a>
+
+
+</body>
+</html>
