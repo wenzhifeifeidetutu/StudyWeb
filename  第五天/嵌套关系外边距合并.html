@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .father {
+            width: 500px;
+            height: 500px;
+
+            background-color: pink;
+            /* 垂直外边距合并，解决方案 定义父亲上边框 */
+            /* border: 1px solid transparent; */
+
+            /* 可以给父亲指定一个上pading值 */
+            /* padding-top: 1px; */
+            /* 添加一个overflow: hidden; */
+            overflow: hidden;
+       }
+
+       .son {
+           width: 200px;
+           height: 200px;
+           margin-top: 100px;
+
+           background-color: purple;
+       }
+    </style>
+
+</head>
+<body>
+    <div class="father">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+</html>
