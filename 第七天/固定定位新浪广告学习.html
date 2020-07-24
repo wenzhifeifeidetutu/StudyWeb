@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1002px;
+            margin: 0 auto;
+            /* 防止被压住 */
+            margin-top: 44pxs;
+        }
+
+        .ad-l {
+            position: fixed;
+            top: 100px;
+            left: 0;
+
+        }
+        .ad-r {
+            position: fixed;
+            top: 100px;
+            right: 0;
+        }
+        .top {
+            position: fixed;
+            top: 0;
+            /* 定位会转换为inlin box 需要给宽度 */
+            width: 100%;
+            height: 44px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="images/top.png" alt="">
+    </div>
+
+    <img src="images/ad-l.png" alt="" class="ad-l">
+    <div class="box">
+        <img src="images/box.png" alt="">
+    </div>
+    <img src="images/ad-r.png" alt="" class="ad-r">
+</body>
+</html>

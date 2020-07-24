@@ -250,6 +250,17 @@ li {
     color: #00a4ff;
     margin-right: 30px;
 }
+/* 电梯导航栏样式 */
+.dianti {
+    position: fixed;
+    width: 180px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    margin-left: -790px;
+    margin-top: -210px;
+    background-color: pink;
+}
 
 .box {
     margin-top: 15px;
@@ -281,6 +292,7 @@ li {
 }
 
 .box-bd li {
+    position: relative;
     float: left;
     width: 228px;
     height: 270px;
@@ -292,6 +304,14 @@ li {
 
 .box-bd li img {
     width: 100%;
+}
+
+.box-bd .hot {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 40px;
+    height: 24px;
 }
 
 .box-bd li h4 {
