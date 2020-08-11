@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 需要两个盒子一个设置背景左侧，一个设置背景右侧
+        通过padding来撑开，右边设置右对齐就行 
+        a 包含span 所以整个区域都能点击，不然只能点击右侧 */
+        a {
+            display: inline-block;
+            height: 33px;
+            background: url(images/to.png) no-repeat left top;
+            margin: 100px;
+            padding-left: 15px;
+            color: #ffffff;
+            line-height: 33px;
+        }
+
+        a span {
+            display: inline-block;
+            height: 33px;
+            background: url(images/to.png) no-repeat right top;
+             padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">
+        <span>首页</span>
+    </a>
+
+    <a href="#">
+        <span>首sadasdsadasdasdsa页</span>
+    </a>
+
+    <a href="#">
+        <span>首页</span>
+    </a>
+</body>
+</html>

@@ -1,0 +1,333 @@
+/* 公共css */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.style_red {
+    color: #c81623;
+}
+
+.style_text_12 {
+    font-size: 12px;
+}
+
+/* 定义字体 */
+ @font-face {
+            /* 注意声明字体名字 */
+            font-family: 'icomoon';
+            /* 注意声明字体路径 */
+            src:  url('../fonts/icomoon.eot?7kkyc2');
+            src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+            url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+            url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+            url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        } 
+/* ico字体 */
+.fr .icomoon {
+    font-family: 'icomoon';
+    font-size: 16px;
+    /* 行高小于高会偏上。行高大于高度会偏下 */
+    line-height: 26px;
+}
+
+.spacer {
+    width: 1px;
+    height: 12px;
+    background-color:  #666;
+    margin: 9px 12px 0;
+}
+/* 顶部快捷导航 */
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    /* 行高直接给父盒子子盒子会继承，也会居中的 */
+    line-height: 31px;
+
+}
+
+.shortcut li {
+    float: left;
+}
+
+
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    height: 56px;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    /* overflow-hidden + text-indent或者text-size为0 */
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left:348px;
+
+}
+
+.search .text {
+    float: left;
+    width: 445px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    padding-left: 10px;
+    color: #cccccc;
+}
+
+.btn {
+    float: left;
+    width: 82px;
+    height: 36px;
+    background-color: #b1191a;
+    border: 0;
+    font-size: 16px;
+    color: #ffffff;
+
+}
+
+.hotwords {
+    position: absolute;
+    top: 65px;
+    left: 348px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+
+
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 138px;
+    height: 34px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    text-align: center;
+
+}
+
+.shopcar .car {
+    font-family: 'icomoon';
+    color: #da5555;
+
+}
+
+.shopcar .arrow {
+    font-family: 'icomoon';
+    color: #dbdbdb;
+}
+
+.shopcar .shopnumer {
+    position: absolute;
+    left: 104px;
+    top: -5px;
+    height: 14px;
+    background-color: #e60012;
+    line-height: 14px;
+    padding: 0 3px;
+    border-radius:  7px 7px 7px 0;
+    color: #ffffff;
+}
+
+/* nav开始 */
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.dropdown {
+    float: left;
+    width: 209px;
+    height: 45px;
+    background-color: pink;
+}
+
+.dropdown .dt {
+    height: 100%;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+.dropdown .dd {
+    height: 465px;
+    background-color: #c81623;
+    margin-top: 2px;
+}
+
+.memu_item {
+    height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+    padding:0 10px;
+}
+
+.memu_item:hover {
+    background-color: #fff;
+}
+
+.memu_item:hover a {
+    color: #d5525c;
+}
+
+.memu_item a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.memu_item i {
+    float: right;
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: #fff;
+}
+
+.navitems{
+    float: left;
+    margin-left: 10px;
+}
+
+
+.navitems li {
+    float: left;
+}
+
+
+.navitems li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+/* footer开始 */
+.footer {
+    height: 386px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 79px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.mod_service li {
+    float: left;
+    width: 240px;
+    height: 79px;
+
+}
+
+/* 使用精灵图技术 */
+
+
+.mod_service_icon {
+    float: left;
+    width: 51px;
+    height: 51px;
+    margin-left: 37px;
+    background: url(../img/icons.png) no-repeat
+}
+
+.mod_service_zheng {
+   background-position:  -251px -3px;
+}
+
+.mod_service_title {
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.mod_service_title h5 {
+    font-size: 14px;
+}
+
+.mod_service_ji {
+    background-position: -254px -54px;
+}
+
+.mod_service_wu {
+    background-position: -256px -106px;
+}
+
+.mod_service_te {
+    background-position: -256px -157px;
+}
+
+.mod_service_help {
+    background-position: -256px -209px;
+}
+
+.mod_help {
+    height: 187px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.mod_help_item  {
+    float: left;
+    width: 150px;
+    padding: 20px 0 0 50px;
+}
+
+.mod_help_item dt {
+    height: 28px;
+    font-size: 16px;
+}
+
+.mod_help_item dd {
+    height: 19px;
+}
+
+.mod_help_app dt,
+p {
+    padding-left: 15px;
+}
+
+.mod_help_app img {
+    margin: 7px 0;
+}
+
+.mod_copyright {
+    text-align:center;
+}
+
+.mod_copyright_links {
+    margin: 20px 0 15px 0 ;
+
+}
+
+.mod_copyright_infos {
+    line-height: 18px;
+}
